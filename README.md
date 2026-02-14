@@ -67,7 +67,7 @@ ccd-gis-mvp/
 ```
 
 ---
-```markdown
+
 ## Reproducibility Guide
 
 To replicate the analytical workflow:
