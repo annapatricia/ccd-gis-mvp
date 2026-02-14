@@ -129,3 +129,18 @@ The hexagonal aggregation (H3) highlights spatial concentration patterns before 
 **Pre-intervention:** higher concentration around the initial hotspot.  
 **Post-intervention:** spatial displacement toward a new territorial cluster.
 
+### Spatial Concentration and Inequality
+
+To assess whether intervention reduced territorial concentration or merely displaced it, we compute both the Top-10% concentration share and the Spatial Gini coefficient.
+
+**Top 10% most active cells:**
+- Pre-intervention: **69.87%** of events  
+- Post-intervention: **59.27%** of events  
+- Total (combined): **38.67%**
+
+**Spatial Gini coefficient:**
+- Pre-intervention: **0.838**
+- Post-intervention: **0.775**
+- Total (combined): **0.616**
+
+Results indicate that although spatial inequality decreases after intervention, concentration remains high. This suggests partial dispersion combined with territorial displacement rather than full suppression.
