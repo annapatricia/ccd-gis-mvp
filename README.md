@@ -99,19 +99,33 @@ Outputs are saved in:
 - When adapted to restricted administrative datasets, data access and storage should follow institutional and legal protocols.
 
 
-## Interactive map (São Paulo – synthetic scenario)
+## Interactive Maps (São Paulo – Synthetic Scenario)
+
+Event-level visualization:
+
 [Open synthetic events map](reports/maps/synthetic_events_map_sao_paulo.html)
 
-resultados
-### ?? Time series (daily events)
+Hexagonal hotspot aggregation (H3):
+
+[Open H3 hotspot map](reports/maps/h3_hotspots_res9_sao_paulo.html)
+
+## Results
+
+### Time Series (Daily Events)
 
 ![Daily events time series](reports/figures/timeseries_daily_events.png)
 
-##  H3 Hotspots — Before vs After
+### H3 Hotspots — Before vs After
 
-[Open interactive map](reports/maps/h3_hotspots_res9_sao_paulo.html)
+The hexagonal aggregation (H3) highlights spatial concentration patterns before and after the intervention.
+
+[Open interactive H3 hotspot map](reports/maps/h3_hotspots_res9_sao_paulo.html)
 
 <p align="center">
   <img src="reports/figures/h3_hotspots_pre.png" width="48%" />
   <img src="reports/figures/h3_hotspots_post.png" width="48%" />
 </p>
+
+**Pre-intervention:** higher concentration around the initial hotspot.  
+**Post-intervention:** spatial displacement toward a new territorial cluster.
+
