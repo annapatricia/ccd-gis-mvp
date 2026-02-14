@@ -195,3 +195,33 @@ Target outlets include journals in:
 
 The integrated spatial-econometric framework also provides a methodological contribution that can be adapted to other policy domains.
 
+---
+
+### 13. Risks and Mitigation Strategies
+
+Risk 1: Data Access Constraints  
+Georeferenced enforcement and police data may face administrative or confidentiality restrictions.
+
+Mitigation:
+The project is structured to operate with aggregated spatial grids (H3), preserving anonymity. Synthetic simulations are already implemented to validate the full analytical pipeline prior to restricted data access.
+
+Risk 2: Identification Challenges  
+Parallel trends assumptions may not hold in all treated locations.
+
+Mitigation:
+Dynamic event-study models are used to test pre-treatment trends explicitly. Sensitivity analyses and alternative treatment definitions (e.g., varying treatment intensity thresholds) will be implemented.
+
+Risk 3: Measurement Error in Spatial Spillovers  
+Spillover effects may be sensitive to buffer definitions.
+
+Mitigation:
+The project estimates multiple radial bands and conducts robustness checks with alternative distance cutoffs and continuous distance measures.
+
+Risk 4: Policy Heterogeneity  
+Coercive interventions may vary in intensity across time and space.
+
+Mitigation:
+The framework allows modeling heterogeneous treatment intensity and incorporating enforcement dosage measures where available.
+
+By anticipating these challenges, the project maintains methodological rigor and adaptability under real-world institutional constraints.
+
