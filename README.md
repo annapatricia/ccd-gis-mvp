@@ -77,7 +77,7 @@ resultados
 
 ![Daily events time series](reports/figures/timeseries_daily_events.png)
 
-## ?? H3 Hotspots — Before vs After
+##  H3 Hotspots — Before vs After
 
 <p align="center">
   <img src="reports/figures/h3_hotspots_pre.png" width="48%" />
