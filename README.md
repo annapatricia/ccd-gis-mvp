@@ -144,3 +144,21 @@ To assess whether intervention reduced territorial concentration or merely displ
 - Total (combined): **0.616**
 
 Results indicate that although spatial inequality decreases after intervention, concentration remains high. This suggests partial dispersion combined with territorial displacement rather than full suppression.
+
+### Causal Estimate (Difference-in-Differences)
+
+We estimate a two-way fixed effects Difference-in-Differences model with:
+
+- H3 cell fixed effects
+- Day fixed effects
+- Standard errors clustered at the cell level
+
+Main result:
+
+Treat × Post coefficient = **−1.67 events per cell-day**  
+(p < 0.001)
+
+This indicates that treated cells experienced a statistically significant reduction in event intensity after the intervention.
+
+Full results table available in:
+data/processed/did_results.csv
