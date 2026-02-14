@@ -13,7 +13,10 @@ This project investigates how coercive security policies reshape the spatial str
 
 ### 2. Central Research Question
 
-Do coercive public security interventions reduce open drug-use scenes, or do they reconfigure their territorial distribution through bounded spatial displacement?
+How do different types of public security interventions — coercive and preventive — affect the spatial configuration, mobility, and concentration dynamics of open drug-use scenes?
+
+Rather than asking whether interventions reduce visible activity, the project investigates how distinct policy approaches reshape territorial organization over time.
+
 
 ---
 
@@ -50,6 +53,8 @@ The empirical design allows identification of:
 - Dynamic temporal adjustments
 - Distance-decay spillovers
 - Changes in territorial inequality
+
+Where multiple policy types are observed, treatment will be categorized by intervention logic (coercive vs preventive), allowing comparative causal estimation.
 
 ---
 
@@ -131,26 +136,24 @@ The methodological framework developed here can guide future evaluations of secu
 
 ---
 
-### 10. Conceptual Framework: Territorial Compression and Bounded Spillover
+### 10. Conceptual Framework: Territorial Reconfiguration under Distinct Policy Logics
 
-This project proposes a conceptual framework in which coercive interventions operate through two simultaneous mechanisms:
+This project proposes that different policy logics produce distinct territorial dynamics.
 
-1. Territorial Compression:
-   Enforcement reduces visible activity in directly treated locations by increasing enforcement intensity and risk.
+Coercive interventions tend to generate:
 
-2. Bounded Spillover:
-   Rather than dispersing uniformly across the city, displaced activity relocates within geographically constrained ranges, producing radial decay patterns.
+- Immediate territorial compression
+- Bounded spatial spillovers
+- Potential medium-term reoccupation
 
-Under this framework, urban illicit markets reorganize spatially in structured ways rather than disappearing.
+Preventive or integrated interventions may generate:
 
-This model allows differentiation between:
-- Genuine suppression
-- Local displacement
-- Territorial redistribution
+- Gradual decline in territorial concentration
+- Lower displacement intensity
+- More persistent spatial adjustment
 
-By integrating spatial concentration metrics and distance-based causal estimates, the project formalizes a territorial mechanism that advances displacement theory beyond descriptive approaches.
-
----
+By modeling both spatial and temporal responses, the project differentiates policy-induced territorial dynamics rather than assuming uniform effects.
+----------
 
 ### 11. International Research Positioning
 
@@ -246,6 +249,12 @@ Weisburd, D. (2015). The law of crime concentration. Criminology.
 Dell, M. (2015). Trafficking networks and the Mexican drug war. American Economic Review.
 
 Blattman, C., Duncan, G., Lessing, B., & Tobón, S. (2021). Gang rule. American Economic Review.
+
+Rhodes, T. (2002). The 'risk environment': a framework for understanding harm reduction. International Journal of Drug Policy.
+
+Marlowe, D. (2010). Integrating substance abuse treatment and criminal justice supervision. Journal of Substance Abuse Treatment.
+
+Des Jarlais, D. C. (2017). Harm reduction in the United States: Research perspective. Drug and Alcohol Review.
 
 ---
 
