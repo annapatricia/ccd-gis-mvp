@@ -91,10 +91,13 @@ Outputs are saved in:
 - data/processed/
 ---
 
-## ?? Data & ethics
-- Do not publish raw point-level sensitive geolocations.
-- Use aggregation (H3/hex) and anonymization for any public release.
-- This repository is designed to work with **synthetic data** for open sharing.
+## Data & Ethical Considerations
+
+- Raw point-level geolocated data should not be publicly released when referring to sensitive populations or vulnerable territories.  
+- Public dissemination should rely on spatial aggregation (e.g., H3 hexagonal grids) and anonymization procedures.  
+- This repository is structured to operate with **synthetic georeferenced data** to ensure transparency, reproducibility, and ethical compliance.  
+- When adapted to restricted administrative datasets, data access and storage should follow institutional and legal protocols.
+
 
 ## Interactive map (São Paulo – synthetic scenario)
 [Open synthetic events map](reports/maps/synthetic_events_map_sao_paulo.html)
