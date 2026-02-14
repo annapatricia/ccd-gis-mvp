@@ -67,33 +67,28 @@ ccd-gis-mvp/
 ```
 
 ---
+```markdown
 ## Reproducibility Guide
 
-To replicate the full analytical workflow:
+To replicate the analytical workflow:
 
-```bash
+Create environment (Windows):
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1   # Windows
+.\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
+
+Run full pipeline:
 python src/run_mvp.py
 
-Alternatively, the analysis can be executed step by step using the notebooks:
+Alternatively, run step by step using notebooks:
+- notebooks/01_synthetic_data.ipynb
+- notebooks/02_hotspots.ipynb
+- notebooks/03_event_study_spillover.ipynb
 
-notebooks/01_synthetic_data.ipynb
-
-notebooks/02_hotspots.ipynb
-
-notebooks/03_event_study_spillover.ipynb
-
-All outputs (maps, figures, and aggregated metrics) are automatically saved in:
-
-reports/maps/
-
-reports/figures/
-
-data/processed/
-
-
+Outputs are saved in:
+- reports/maps/
+- reports/figures/
+- data/processed/
 ---
 
 ## ?? Data & ethics
