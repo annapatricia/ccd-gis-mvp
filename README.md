@@ -162,3 +162,18 @@ This indicates that treated cells experienced a statistically significant reduct
 
 Full results table available in:
 data/processed/did_results.csv
+
+### Dynamic Effects (Event Study)
+
+The event-study specification estimates dynamic treatment effects relative to the intervention date (day 0), using:
+
+- H3 cell fixed effects
+- Day fixed effects
+- Clustered standard errors at the cell level
+
+![Event Study](reports/figures/event_study_did.png)
+
+Pre-intervention coefficients remain close to zero, supporting the parallel trends assumption. 
+
+Post-intervention estimates show a sustained and statistically significant reduction in event intensity within treated cells, consistent with a localized enforcement effect.
+
