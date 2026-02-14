@@ -165,5 +165,83 @@ plt.savefig(fig_path, dpi=200)
 plt.close()
 print("Event study figure saved to:", fig_path)
 
+# ---------- Spillover (radial exposure) ----------
+import h3
+from math import radians, cos, sin, asin, sqrt
+
+# helper: haversine distance in km
+def haversine_km(lat1, lon1, lat2, lon2):
+    R = 6371.0
+    dlat = radians(lat2 - lat1)
+    dlon = radians(lon2 - lon1)
+    a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2
+    c = 2 * asin(sqrt(a))
+    return R * c
+
+# compute centroid of pre-treatment hotspot
+treated_pre = df[(df["date"] < intervention_date) & (df["h3"].isin(treated_cells))]
+center_lat = treated_pre["lat"].mean()
+center_lon = treated_pre["lon"].mean()
+
+# compute distance of each H3 cell centroid to hotspot center
+cell_coords = []
+
+for cell in panel_es.reset_index()["h3"].unique():
+    boundary = h3.cell_to_boundary(cell)
+    lat = np.mean([p[0] for p in boundary])
+    lon = np.mean([p[1] for p in boundary])
+    dist = haversine_km(lat, lon, center_lat, center_lon)
+    cell_coords.append((cell, dist))
+
+dist_df = pd.DataFrame(cell_coords, columns=["h3", "distance_km"])
+
+panel_spill = panel.reset_index().merge(dist_df, on="h3")
+
+# define rings (in km)
+panel_spill["ring_0_05"] = (panel_spill["distance_km"] <= 0.5).astype(int)
+panel_spill["ring_05_1"] = ((panel_spill["distance_km"] > 0.5) & (panel_spill["distance_km"] <= 1.0)).astype(int)
+panel_spill["ring_1_15"] = ((panel_spill["distance_km"] > 1.0) & (panel_spill["distance_km"] <= 1.5)).astype(int)
+
+panel_spill["ring_0_05_post"] = panel_spill["ring_0_05"] * panel_spill["post"]
+panel_spill["ring_05_1_post"] = panel_spill["ring_05_1"] * panel_spill["post"]
+panel_spill["ring_1_15_post"] = panel_spill["ring_1_15"] * panel_spill["post"]
+
+panel_spill = panel_spill.set_index(["h3", "date"])
+
+y_sp = panel_spill["events"]
+X_sp = panel_spill[["ring_0_05_post", "ring_05_1_post", "ring_1_15_post"]]
+
+spill_model = PanelOLS(y_sp, X_sp, entity_effects=True, time_effects=True)
+spill_res = spill_model.fit(cov_type="clustered", cluster_entity=True)
+
+print("\n--- Spillover Results ---")
+print(spill_res.summary)
+
+# ---------- Save spillover results ----------
+spill_params = spill_res.params
+spill_se = spill_res.std_errors
+spill_t = spill_res.tstats
+spill_p = spill_res.pvalues
+spill_ci = spill_res.conf_int()
+
+spill_rows = []
+for var in ["ring_0_05_post", "ring_05_1_post", "ring_1_15_post"]:
+    spill_rows.append({
+        "term": var,
+        "coefficient": float(spill_params[var]),
+        "std_error": float(spill_se[var]),
+        "t_stat": float(spill_t[var]),
+        "p_value": float(spill_p[var]),
+        "ci_lower": float(spill_ci.loc[var].iloc[0]),
+        "ci_upper": float(spill_ci.loc[var].iloc[1]),
+    })
+
+spill_table = pd.DataFrame(spill_rows)
+
+spill_out = os.path.join(ROOT, "data", "processed", "spillover_results.csv")
+spill_table.to_csv(spill_out, index=False)
+
+print("\nSpillover results saved to:", spill_out)
+
 
 
