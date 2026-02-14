@@ -45,7 +45,7 @@ This MVP operationalizes a policy-evaluation framework that integrates spatial a
 ---
 
 ##  Repository structure
-
+```
 ccd-gis-mvp/
 │
 ├── data/
@@ -64,7 +64,7 @@ ccd-gis-mvp/
 │
 ├── docs/ # project documentation
 └── README.md
-
+```
 
 ---
 ## Reproducibility Guide
