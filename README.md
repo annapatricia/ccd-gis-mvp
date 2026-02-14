@@ -1,4 +1,4 @@
-# CCD – Open Drug-Use Scenes (GIS MVP)
+# CCD â€“ Open Drug-Use Scenes (GIS MVP)
 
 **Goal:** build a reproducible GIS + statistics MVP to study how **public security policies** affect:
 - **spatial configuration** (hotspots, clustering),
@@ -31,15 +31,15 @@ with a **light qualitative layer** to explain mechanisms.
 \\\
 ccd-gis-mvp/
 +-- data/
-¦   +-- raw/
-¦   +-- processed/
+Â¦   +-- raw/
+Â¦   +-- processed/
 +-- notebooks/
 +-- src/
 +-- reports/
-¦   +-- figures/
-¦   +-- maps/
+Â¦   +-- figures/
+Â¦   +-- maps/
 +-- qualitative/
-¦   +-- protocols/
+Â¦   +-- protocols/
 +-- docs/
 +-- README.md
 \\\
@@ -69,7 +69,7 @@ otebooks/03_event_study_spillover.ipynb
 - Use aggregation (H3/hex) and anonymization for any public release.
 - This repository is designed to work with **synthetic data** for open sharing.
 
-## Interactive map (São Paulo – synthetic scenario)
+## Interactive map (SÃ£o Paulo â€“ synthetic scenario)
 [Open synthetic events map](reports/maps/synthetic_events_map_sao_paulo.html)
 
 resultados
@@ -77,7 +77,7 @@ resultados
 
 ![Daily events time series](reports/figures/timeseries_daily_events.png)
 
-## ?? H3 Hotspots — Before vs After
+## ?? H3 Hotspots â€” Before vs After
 
 <p align="center">
   <img src="reports/figures/h3_hotspots_pre.png" width="48%" />
