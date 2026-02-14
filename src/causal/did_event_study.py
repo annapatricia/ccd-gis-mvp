@@ -98,4 +98,72 @@ did_table.to_csv(output_path, index=False)
 
 print("\nDiD results saved to:", output_path)
 
+# ---------- Event study (dynamic effects) ----------
+import matplotlib.pyplot as plt
+
+# Reset index back to columns (PanelOLS needs MultiIndex later)
+panel_es = panel.reset_index().copy()
+
+# relative day to intervention
+panel_es["rel_day"] = (panel_es["date"] - intervention_date).dt.days
+
+# choose event window (paper standard)
+WINDOW_PRE = 21
+WINDOW_POST = 21
+panel_es = panel_es[(panel_es["rel_day"] >= -WINDOW_PRE) & (panel_es["rel_day"] <= WINDOW_POST)].copy()
+
+# create event-time dummies interacted with treat
+# baseline will be rel_day = -1 (omitted)
+baseline = -1
+event_days = [d for d in range(-WINDOW_PRE, WINDOW_POST + 1) if d != baseline]
+
+for d in event_days:
+    panel_es[f"es_{d}"] = ((panel_es["rel_day"] == d) & (panel_es["treat"] == 1)).astype(int)
+
+# panel index
+panel_es = panel_es.set_index(["h3", "date"])
+
+y_es = panel_es["events"]
+X_cols = [f"es_{d}" for d in event_days]
+X_es = panel_es[X_cols]
+
+es_model = PanelOLS(y_es, X_es, entity_effects=True, time_effects=True)
+es_res = es_model.fit(cov_type="clustered", cluster_entity=True)
+
+# build results table for plotting
+rows = []
+for d in event_days:
+    name = f"es_{d}"
+    rows.append({
+        "rel_day": d,
+        "coef": float(es_res.params[name]),
+        "se": float(es_res.std_errors[name]),
+    })
+
+es_df = pd.DataFrame(rows).sort_values("rel_day")
+es_df["ci_low"] = es_df["coef"] - 1.96 * es_df["se"]
+es_df["ci_high"] = es_df["coef"] + 1.96 * es_df["se"]
+
+# save table
+es_out = os.path.join(ROOT, "data", "processed", "event_study_results.csv")
+es_df.to_csv(es_out, index=False)
+print("\nEvent study results saved to:", es_out)
+
+# plot
+plt.figure()
+plt.plot(es_df["rel_day"], es_df["coef"])
+plt.axvline(0, linestyle="--")      # intervention
+plt.axhline(0, linestyle="--")      # zero effect
+plt.fill_between(es_df["rel_day"], es_df["ci_low"], es_df["ci_high"], alpha=0.2)
+plt.title("Event Study: Dynamic Effects (Treat × Event Time)")
+plt.xlabel("Days relative to intervention")
+plt.ylabel("Effect on events per cell-day")
+plt.tight_layout()
+
+fig_path = os.path.join(ROOT, "reports", "figures", "event_study_did.png")
+plt.savefig(fig_path, dpi=200)
+plt.close()
+print("Event study figure saved to:", fig_path)
+
+
 
