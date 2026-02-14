@@ -67,13 +67,12 @@ This indicates a statistically significant reduction in treated cells after the 
 
 Pre-intervention coefficients remain close to zero, supporting the parallel trends assumption. Post-intervention effects show sustained reductions.
 
+![Event Study Dynamic Effects](../reports/figures/event_study_did.png)
+
+Figure 1. Event-study estimates relative to the intervention date. 
+Pre-intervention coefficients remain statistically indistinguishable from zero, supporting the parallel trends assumption.
+
 ### 4.3 Radial Spillover
-
-- 0–500m: −1.70 events per cell-day (p < 0.001)
-- 500–1000m: −0.56 events per cell-day (p < 0.001)
-- 1000–1500m: −0.35 events per cell-day (p < 0.001)
-
-Effects decay with distance, suggesting localized suppression rather than outward displacement.
 
 ---
 
