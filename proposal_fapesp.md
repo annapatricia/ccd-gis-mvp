@@ -246,3 +246,26 @@ Weisburd, D. (2015). The law of crime concentration. Criminology.
 Dell, M. (2015). Trafficking networks and the Mexican drug war. American Economic Review.
 
 Blattman, C., Duncan, G., Lessing, B., & Tobón, S. (2021). Gang rule. American Economic Review.
+
+---
+
+### 15. Temporal Dynamics and Market Adjustment
+
+Beyond static before-and-after comparisons, the project explicitly models temporal adjustment processes following security interventions.
+
+Using event-study specifications, the research examines:
+
+- Pre-intervention parallel trends
+- Immediate post-intervention suppression effects
+- Medium-term adjustment dynamics
+- Persistence or decay of intervention effects over time
+
+This temporal modeling allows identification of whether policy impacts are:
+
+- Short-lived suppression effects
+- Gradual market reorganization
+- Persistent structural changes
+- Cyclical territorial reoccupation patterns
+
+By integrating spatial and temporal dimensions, the project captures the dynamic evolution of open drug-use scenes rather than treating interventions as static shocks.
+
