@@ -177,3 +177,27 @@ Pre-intervention coefficients remain close to zero, supporting the parallel tren
 
 Post-intervention estimates show a sustained and statistically significant reduction in event intensity within treated cells, consistent with a localized enforcement effect.
 
+### Spatial Spillover (Radial Effects)
+
+To assess whether the intervention generated spatial displacement (balloon effect), we estimate radial treatment effects using distance bands from the original hotspot center:
+
+- 0–500 meters  
+- 500–1000 meters  
+- 1000–1500 meters  
+
+Model specification:
+
+- H3 cell fixed effects  
+- Day fixed effects  
+- Clustered standard errors at the cell level  
+
+Main results:
+
+- 0–500m: **−1.70 events per cell-day** (p < 0.001)  
+- 500–1000m: **−0.56 events per cell-day** (p < 0.001)  
+- 1000–1500m: **−0.35 events per cell-day** (p < 0.001)
+
+The magnitude of the effect declines with distance, suggesting localized suppression rather than outward displacement.
+
+Full results table available in:
+data/processed/spillover_results.csv
