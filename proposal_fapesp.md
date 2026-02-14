@@ -225,3 +225,24 @@ The framework allows modeling heterogeneous treatment intensity and incorporatin
 
 By anticipating these challenges, the project maintains methodological rigor and adaptability under real-world institutional constraints.
 
+---
+
+### 14. Selected References
+
+Anselin, L. (1995). Local Indicators of Spatial Association—LISA. Geographical Analysis.
+
+Abadie, A. (2005). Semiparametric difference-in-differences estimators. Review of Economic Studies.
+
+Braga, A. A., Papachristos, A. V., & Hureau, D. M. (2014). The effects of hot spots policing on crime. Justice Quarterly.
+
+Clarke, R. V., & Weisburd, D. (1994). Diffusion of crime control benefits. Crime and Justice.
+
+Di Tella, R., & Schargrodsky, E. (2004). Do police reduce crime? American Economic Review.
+
+Eck, J. E. (1993). The threat of crime displacement. Crime and Place.
+
+Weisburd, D. (2015). The law of crime concentration. Criminology.
+
+Dell, M. (2015). Trafficking networks and the Mexican drug war. American Economic Review.
+
+Blattman, C., Duncan, G., Lessing, B., & Tobón, S. (2021). Gang rule. American Economic Review.
