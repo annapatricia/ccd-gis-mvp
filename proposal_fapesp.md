@@ -128,3 +128,24 @@ Beyond technical evaluation, the project contributes to the normative debate sur
 By distinguishing between suppression and spatial reconfiguration, the research supports more evidence-based and socially informed urban security policies.
 
 The methodological framework developed here can guide future evaluations of security interventions across Brazilian metropolitan regions.
+
+---
+
+### 10. Conceptual Framework: Territorial Compression and Bounded Spillover
+
+This project proposes a conceptual framework in which coercive interventions operate through two simultaneous mechanisms:
+
+1. Territorial Compression:
+   Enforcement reduces visible activity in directly treated locations by increasing enforcement intensity and risk.
+
+2. Bounded Spillover:
+   Rather than dispersing uniformly across the city, displaced activity relocates within geographically constrained ranges, producing radial decay patterns.
+
+Under this framework, urban illicit markets reorganize spatially in structured ways rather than disappearing.
+
+This model allows differentiation between:
+- Genuine suppression
+- Local displacement
+- Territorial redistribution
+
+By integrating spatial concentration metrics and distance-based causal estimates, the project formalizes a territorial mechanism that advances displacement theory beyond descriptive approaches.
