@@ -149,3 +149,49 @@ This model allows differentiation between:
 - Territorial redistribution
 
 By integrating spatial concentration metrics and distance-based causal estimates, the project formalizes a territorial mechanism that advances displacement theory beyond descriptive approaches.
+
+---
+
+### 11. International Research Positioning
+
+The project directly engages with international debates in spatial criminology, urban economics, and public policy evaluation.
+
+Globally, research on crime displacement has produced mixed evidence regarding whether enforcement leads to diffusion of benefits, spatial displacement, or crime relocation. However, much of this literature relies on coarse geographic units or aggregate crime measures, limiting the ability to detect fine-grained territorial reorganization.
+
+By integrating high-resolution hexagonal spatial grids with dynamic difference-in-differences and radial spillover modeling, this project contributes a more precise identification strategy for territorial market responses.
+
+The framework is particularly relevant for large metropolitan areas characterized by spatial inequality and concentrated informal economies — contexts found not only in Brazil, but also in Latin America, parts of Europe, and North American cities experiencing visible street-level drug markets.
+
+The proposed Territorial Compression and Bounded Spillover model advances displacement theory by formally modeling spatial inequality and bounded reconfiguration rather than assuming binary suppression versus displacement outcomes.
+
+This approach positions the project for publication in international journals focused on:
+
+- Urban studies
+- Criminology
+- Applied econometrics
+- Public policy analysis
+
+---
+
+### 12. Expected Scientific Outputs
+
+The project is structured to generate at least three international journal articles:
+
+Article 1:
+Causal impact of coercive enforcement on territorial concentration of open drug-use scenes.
+
+Article 2:
+Dynamic event-study evidence on bounded spatial spillovers in urban illicit markets.
+
+Article 3:
+Spatial inequality and territorial reconfiguration following security interventions.
+
+Target outlets include journals in:
+- Urban Studies
+- Criminology
+- Journal of Quantitative Criminology
+- Journal of Urban Economics (applied section)
+- Public Policy and Administration
+
+The integrated spatial-econometric framework also provides a methodological contribution that can be adapted to other policy domains.
+
