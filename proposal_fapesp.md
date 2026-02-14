@@ -90,3 +90,21 @@ Year 2:
 - Spillover and dynamic analysis
 - Integration of qualitative interviews
 - Manuscript preparation and dissemination
+
+---
+
+### 8. Gap in the Literature
+
+Existing studies on drug-market displacement often focus on immediate suppression effects or city-wide crime trends. Few studies systematically measure how coercive interventions reshape territorial inequality and spatial concentration patterns at fine geographic scales.
+
+Moreover, spatial spillover effects are rarely modeled dynamically using both event-study frameworks and distance-based radial exposure measures.
+
+This project fills this gap by integrating:
+
+- High-resolution hexagonal spatial aggregation
+- Causal inference with two-way fixed effects
+- Dynamic event-study estimation
+- Explicit modeling of spatial inequality (Spatial Gini)
+- Radial spillover gradients
+
+This integrated framework allows for a more precise identification of territorial reconfiguration mechanisms than existing displacement studies.
