@@ -72,3 +72,7 @@ otebooks/03_event_study_spillover.ipynb
 ## Interactive map (São Paulo – synthetic scenario)
 [Open synthetic events map](reports/maps/synthetic_events_map_sao_paulo.html)
 
+resultados
+### ?? Time series (daily events)
+
+![Daily events time series](reports/figures/timeseries_daily_events.png)

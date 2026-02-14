@@ -4,6 +4,8 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 import folium
+import matplotlib.pyplot as plt
+
 
 # ---------- paths ----------
 ROOT = os.path.dirname(os.path.dirname(__file__))
@@ -98,6 +100,23 @@ map_path = os.path.join(MAP_OUT, "synthetic_events_map_sao_paulo.html")
 
 m.save(map_path)
 
+# ---------- time series plot (daily counts) ----------
+daily = df.set_index("date").resample("D").size().rename("events").reset_index()
+
+plt.figure()
+plt.plot(daily["date"], daily["events"])
+plt.axvline(op_date, linestyle="--")  # intervention date
+plt.title("Synthetic events over time (São Paulo scenario)")
+plt.xlabel("Date")
+plt.ylabel("Number of events (daily)")
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+ts_path = os.path.join(FIG_OUT, "timeseries_daily_events.png")
+plt.savefig(ts_path, dpi=200)
+plt.close()
+
+
 print("✅ Done")
 print("CSV:", csv_path)
 print("Map:", map_path)
@@ -105,4 +124,6 @@ print("Map:", map_path)
 print(f"Displacement (pre -> post): {disp_km:.2f} km")
 print(f"Pre centroid:  ({pre_lat:.5f}, {pre_lon:.5f})")
 print(f"Post centroid: ({post_lat:.5f}, {post_lon:.5f})")
+print("Time series figure:", ts_path)
+print("Intervention date:", op_date.date())
 
