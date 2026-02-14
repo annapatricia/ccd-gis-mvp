@@ -69,3 +69,6 @@ otebooks/03_event_study_spillover.ipynb
 - Use aggregation (H3/hex) and anonymization for any public release.
 - This repository is designed to work with **synthetic data** for open sharing.
 
+## Interactive map (São Paulo – synthetic scenario)
+[Open synthetic events map](reports/maps/synthetic_events_map_sao_paulo.html)
+
