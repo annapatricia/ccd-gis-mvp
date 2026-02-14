@@ -108,3 +108,23 @@ This project fills this gap by integrating:
 - Radial spillover gradients
 
 This integrated framework allows for a more precise identification of territorial reconfiguration mechanisms than existing displacement studies.
+
+---
+
+### 9. Institutional and Normative Relevance
+
+Coercive public security interventions in Brazilian metropolitan areas, particularly in São Paulo, have generated recurrent cycles of territorial suppression and reoccupation of open drug-use scenes.
+
+These operations are frequently justified as necessary for restoring urban order, yet their long-term spatial consequences remain insufficiently evaluated.
+
+This project provides a rigorous causal framework to assess:
+
+- Whether coercive strategies reduce territorial concentration
+- Whether they generate bounded displacement into adjacent areas
+- Whether spatial inequality declines or persists after intervention
+
+Beyond technical evaluation, the project contributes to the normative debate surrounding coercive enforcement by quantifying its territorial effects.
+
+By distinguishing between suppression and spatial reconfiguration, the research supports more evidence-based and socially informed urban security policies.
+
+The methodological framework developed here can guide future evaluations of security interventions across Brazilian metropolitan regions.
