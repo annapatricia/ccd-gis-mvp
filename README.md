@@ -1,4 +1,4 @@
-# CCD – Open Drug-Use Scenes (GIS MVP)
+# CCD – Open Drug-Use Scenes (GIS MVP) 
 
 Open drug-use scenes represent a persistent challenge for urban governance in large metropolitan areas. Public security interventions frequently aim to reduce visibility and concentration, yet their spatial consequences remain contested.
 
