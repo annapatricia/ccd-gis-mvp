@@ -1,0 +1,10 @@
+pandas
+numpy
+geopandas
+shapely
+pyproj
+matplotlib
+folium
+h3
+pysal
+statsmodels
