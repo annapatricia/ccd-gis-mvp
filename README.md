@@ -79,10 +79,9 @@ resultados
 
 ##  H3 Hotspots — Before vs After
 
+[Open interactive map](reports/maps/h3_hotspots_res9_sao_paulo.html)
+
 <p align="center">
   <img src="reports/figures/h3_hotspots_pre.png" width="48%" />
   <img src="reports/figures/h3_hotspots_post.png" width="48%" />
 </p>
-
-**Pre:** Higher concentration around the initial hotspot.  
-**Post:** Spatial displacement after intervention.
