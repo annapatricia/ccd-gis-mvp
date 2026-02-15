@@ -87,6 +87,18 @@ Figure 1. Event-study estimates relative to the intervention date.
 Pre-intervention coefficients remain statistically indistinguishable from zero, supporting the parallel trends assumption.
 
 ### 4.3 Radial Spillover
+Distance-based estimates reveal heterogeneous spatial effects:
+
+- 0–500m: −1.70 events per cell-day (p < 0.001)  
+- 500–1000m: −0.56 events per cell-day (p < 0.001)  
+- 1000–1500m: −0.35 events per cell-day (p < 0.001)
+
+The magnitude of the effect decays monotonically with distance from the intervention epicenter. The strongest reductions occur within the immediate treatment radius, while outer rings exhibit smaller but statistically significant declines.
+
+Importantly, we do not observe positive coefficients in outer rings, which would indicate outward displacement. Instead, the pattern is consistent with localized suppression effects rather than spatial relocation in the synthetic scenario.
+
+These findings suggest that targeted interventions may alter territorial intensity gradients rather than simply shifting activity across space.
+
 
 ---
 
