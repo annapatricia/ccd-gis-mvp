@@ -1,8 +1,14 @@
-# The Spatial Effects of Security Interventions on Open Drug-Use Scenes
+# Spatial and Temporal Dynamics of Security Policy Interventions in Open Drug-Use Scenes
+
+## Abstract  
 
 ## Abstract
 
-This study evaluates the causal impact of a targeted security intervention on the spatial concentration and redistribution of open drug-use scenes in an urban context. Using georeferenced event data aggregated at the H3 cell level, we implement a two-way fixed effects Difference-in-Differences (DiD) framework combined with event-study and radial spillover analyses. Results indicate a statistically significant reduction in event intensity within treated areas, with effects decaying over distance and no evidence of outward displacement in the synthetic scenario. These findings illustrate how spatial econometric tools can inform evidence-based public security policy.
+Open drug-use scenes pose persistent governance challenges in large metropolitan areas. Public authorities frequently deploy security interventions to reduce visible concentrations, yet their territorial consequences remain contested. 
+
+This study evaluates how security interventions reshape the spatial and temporal dynamics of open drug-use scenes using high-resolution georeferenced event data aggregated at the H3 cell level. We implement a two-way fixed effects Difference-in-Differences framework combined with event-study and radial spillover analyses.
+
+Results indicate a significant reduction in territorial concentration within treated areas, with effects decaying over distance and limited evidence of outward displacement in the synthetic scenario. Rather than simple suppression, findings suggest structured territorial reconfiguration. These results contribute to policy debates by distinguishing between elimination, displacement, and bounded spatial adjustment mechanisms.
 
 ---
 
@@ -12,7 +18,15 @@ Open drug-use scenes represent a persistent challenge for urban governance. Publ
 
 This paper evaluates the spatial and causal effects of a targeted intervention using high-resolution geospatial data and panel econometric techniques.
 
+Beyond estimating causal impacts, this paper seeks to understand how security policy shapes the territorial organization of urban vulnerability. By integrating spatial concentration metrics and dynamic causal models, the study contributes to debates on whether enforcement-based strategies transform underlying territorial structures or merely redistribute visible manifestations.
+
 ---
+## 2. Conceptual Framework
+
+Security interventions may reshape open drug-use scenes through distinct territorial mechanisms. Coercive strategies may generate immediate spatial compression and bounded spillovers, while preventive or integrated strategies may produce gradual reductions in concentration with lower displacement intensity.
+
+This paper models both spatial and temporal reconfiguration processes, allowing differentiation between suppression, displacement, and territorial redistribution.
+
 
 ## 2. Data and Spatial Construction
 
@@ -78,11 +92,18 @@ Pre-intervention coefficients remain statistically indistinguishable from zero, 
 
 ## 5. Discussion
 
-Results suggest that targeted enforcement reduces local intensity and exhibits spatial decay rather than pure displacement in the synthetic scenario. The methodology demonstrates how spatial panel econometrics can support evidence-based policy evaluation.
+Results suggest that security interventions reshape territorial concentration patterns rather than simply eliminating visible activity. The absence (or presence) of spillover effects indicates whether interventions produce bounded reconfiguration or outward displacement.
 
----
+The dynamic estimates highlight whether policy impacts are temporary or persistent, informing debates on sustainable urban security strategies.
+
 
 ## 6. Conclusion
 
-Combining hexagonal spatial aggregation, causal panel models, and spillover analysis provides a rigorous framework for evaluating territorial security policies. Future applications using administrative data can inform integrated public policy design.
+This study demonstrates how integrating spatial aggregation, causal panel models, and radial spillover analysis allows for a more nuanced evaluation of territorial security policies.
+
+Rather than treating interventions as binary successes or failures, the results highlight the importance of analyzing spatial and temporal reconfiguration processes. Security policies may compress visible activity in targeted locations while inducing bounded territorial adjustments.
+
+For public policy, these findings suggest that evaluation frameworks must move beyond aggregate crime counts and incorporate measures of spatial concentration, mobility, and persistence. Understanding whether interventions generate suppression, displacement, or structural transformation is critical for designing sustainable and integrated urban governance strategies.
+
+Future research using administrative data and qualitative evidence can further clarify how different policy logics — coercive or preventive — shape territorial outcomes.
 
